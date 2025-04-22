@@ -1,6 +1,6 @@
 import { increase, getCount } from "./counter.mjs";
 
-increase();
-increase();
-increase();
-console.log(getCount());
+increase(); // count: 1
+increase(); // count: 2
+
+console.log(getCount()); // 출력: 2
