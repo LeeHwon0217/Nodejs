@@ -5,7 +5,7 @@ const app = express();
 
 // http://127.0.0.1:3000/login?userid=apple&userpw=1234
 app.get("/", (req, res) => {
-  fs.readFile("login2.html", (err, data) => {
+  fs.readFile("login.html", (err, data) => {
     if (err) {
       res.status(500);
       return res.send("파일 읽기 오류");
